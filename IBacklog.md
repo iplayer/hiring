@@ -27,7 +27,7 @@ public class Story {
 
 - The `getSprint(totalPointsAchievable)` method of the Backlog class should return a list of `Story` in the order of business priority, based on the number of points each story takes and the given `totalPointsAchievable` in a sprint.
 
-- You are free to change the instance variable types if necessary
+- You are free to change the instance variable types if necessary.
 
 - You need not implement the entire system or build a UI, but your solution should demonstrate the key functionality specified in the `IBacklog` interface above.
 
