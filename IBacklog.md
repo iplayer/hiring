@@ -11,6 +11,7 @@ public interface IBacklog {
    public Story Remove(String id);
    public List<Story> getSprint(int totalPointsAchievable);
 }
+```
 
 where Story is defined as:
 
@@ -21,7 +22,7 @@ public class Story {
    public int Priority;
    ... // The actual content of the Story is omitted here
 }
-
+```
 
 - Each Story class has a `Points` instance variable, which represents an estimate of development effort required to complete the story, and a `Priority` instance variable, which represents the business priority of the story.
 
