@@ -7,7 +7,7 @@ You are part of the backend web service team, and are responsible for implementi
 ```java
 public interface IBacklog {
    public void Add(Story s);
-   public Story Remove(String id);
+   public Story Remove(String id);   // On success, the removed Story is returned.
    public List<Story> getSprint(int totalPointsAchievable);
 }
 ```
