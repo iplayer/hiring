@@ -7,15 +7,15 @@ You are part of the backend web service team, and are responsible for implementi
 ### /backlog
 
 #### ``` GET /backlog ```
-  * List the stories in the backlog in priority order. 
+  * List the stories in the backlog in priority order, in a JSON array of the Story object below.
   * Returns 200 if a list of stories is retrieved.
 
 #### ``` GET /backlog?points=:estimatedTotal ```
-  * List all stories in the backlog (in priority order) that can be done given estimated total number of points that can be done. 
+  * List all stories in the backlog (in priority order) that can be done given estimated total number of points that can be done, in a JSON array of the Story object below. 
   * Returns 200 if a list of stories is retrieved. Returns 400 if estimatedTotal is negative, 0, or not a number.
 
 #### ``` POST /backlog ```
-  * Add a new story to the backlog. Use Story JSON format below. 
+  * Add a new story to the backlog. Use Story JSON object below. 
   * Returns 200 if the story is added. Otherwise standard HTTP error code is returned.
 
 #### ``` GET /backlog/story/:id ```
@@ -23,7 +23,7 @@ You are part of the backend web service team, and are responsible for implementi
   * Returns 200 if the story is retrieved. If the story with that identifier does not exist, then returns 404.
 
 #### ``` PUT /backlog/story/:id ```
-  * Update the story with the unique identifier provided. Use Story JSON format below. 
+  * Update the story with the unique identifier provided. Use Story JSON object below. 
   * Returns 200 if the story is updated. Otherwise standard HTTP error code is returned.
 
 #### ``` DELETE /backlog/story/:id ```
