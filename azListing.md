@@ -10,7 +10,7 @@ Each of the listing pages should include:
 ## API
 The API end point can be found at:
 ```
-http://d.bbc.co.uk/ibl/v1/atoz/{letter}/programmes?rights=web&page={page}&per_page=20&initial_child_count=0&sort=title&sort_direction=asc&availability=available&api_key={api_key}
+http://data.bbc.co.uk/ibl/v1/atoz/{letter}/programmes?rights=web&page={page}&per_page=20&initial_child_count=0&sort=title&sort_direction=asc&availability=available&api_key={api_key}
 ```
 
 | Parameter     | Value                              |
