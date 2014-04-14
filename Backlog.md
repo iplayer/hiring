@@ -5,23 +5,23 @@ Your team has been asked to create an Agile/Scrum task tracking system. This web
 You are part of the backend web service team, and are responsible for implementing a RESTful micro-service that represents the backlog. The REST service will have the following APIs:
 
 ### /backlog
-* ```http GET /backlog ```
+* ``` GET /backlog ```
   * List the stories in the backlog in priority order.
   * Returns 200 if a list of stories is retrieved.
-* ```http GET /backlog?points=:estimatedTotal ```
+* ``` GET /backlog?points=:estimatedTotal ```
   * List all stories in the backlog (in priority order) that can be done given estimated total number of points that can be done.
   * Returns 200 if a list of stories is retrieved. Returns 400 if estimatedTotal is negative, 0, or not a number.
-* ```http POST /backlog ```
+* ``` POST /backlog ```
   * Add a new story to the backlog. 
   * Use Story JSON format below.
   * Returns 200 if the story is added. Otherwise standard HTTP error code is returned.
-* ```http GET /backlog/story/:id ```
+* ``` GET /backlog/story/:id ```
   * Get a story with the unique identifier provided.
   * Returns 200 if the story is retrieved. If the story with that identifier does not exist, then returns 404.
-* ```http PUT /backlog/story/:id ```
+* ``` PUT /backlog/story/:id ```
   * Update the story with the unique identifier provided. Use Story JSON format below. 
   * Returns 200 if the story is updated. Otherwise standard HTTP error code is returned.
-* ```http DELETE /backlog/story/:id ```
+* ``` DELETE /backlog/story/:id ```
   * Remove a story from the backlog using the identifier provided.
   * Returns 200 if the story is removed. Otherwise standard HTTP error code is returned.
 
