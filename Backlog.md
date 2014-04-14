@@ -4,14 +4,14 @@ Your team has been asked to create an Agile/Scrum task tracking system. This web
 
 You are part of the backend web service team, and are responsible for implementing a RESTful micro-service that represents the backlog. The REST service will have the following APIs:
 
-## /backlog
-|      |                                                              |
+### /backlog
+| verb | what does it do                                              |
 |------|--------------------------------------------------------------|
 | GET  | List the stories in the backlog.                             |
 | POST | Add a new story to the backlog. Use Story JSON format below. |
 
-## /backlog/story/:id
-
+### /backlog/story/:id
+| verb | what does it do                                              |
 |------|--------------------------------------------------------------|
 | GET  | Get a story with the unique identifier provided.             |
 | PUT  | Update the story with the unique identifier provided.        |
