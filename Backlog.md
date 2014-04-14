@@ -30,7 +30,7 @@ You are part of the backend web service team, and are responsible for implementi
   * Remove a story from the backlog using the identifier provided. 
   * Returns 200 if the story is removed. Otherwise standard HTTP error code is returned.
 
-- What a Story looks like:
+What a Story looks like:
 
    ```javascript
    {
@@ -40,6 +40,7 @@ You are part of the backend web service team, and are responsible for implementi
       "title": "Style the iPlayer icon to be more pink." 
    }
    ```
+   
 - You are free to change REST API signature if you think there's a nicer way to structure it.
 - You may implement your solution in any appropriate (i.e. non-obscure) language, and you may choose to implement the storage of any relevant data structures in memory or using a database, but please make sure your solution is working end-to-end and you include instructions for us to run and test your code.
 - You should consider how concurrent use of the system may impact your implementation.
