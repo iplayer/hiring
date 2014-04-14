@@ -25,7 +25,7 @@ You are part of the backend web service team, and are responsible for implementi
   * Remove a story from the backlog using the identifier provided.
   * Returns 200 if the story is removed. Otherwise standard HTTP error code is returned.
 
-A Story:
+What a Story looks like.
 ```javascript
 {
    "id": 123,      // unique identifier
