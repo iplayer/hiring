@@ -28,7 +28,7 @@ You are part of the backend web service team, and are responsible for implementi
 * What a Story looks like:
    ```javascript
    {
-      "id": 123,      // unique identifier
+      "id": 123,      // unique identifier for each story.
       "points": 8,    // abstract unit of comeplexity. Typically the result of planning sessions involving playing cards.
       "priority": 1,  // business priority value. 1 is the highest, 5 is the lowest.
       "title": "Style the iPlayer icon to be more pink." 
