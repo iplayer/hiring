@@ -11,11 +11,11 @@ You are part of the backend web service team, and are responsible for implementi
 | POST | Add a new story to the backlog. Use Story JSON format below. |
 
 ### /backlog/story/:id
-| verb | what does it do                                              |
-|------|--------------------------------------------------------------|
-| GET  | Get a story with the unique identifier provided.             |
-| PUT  | Update the story with the unique identifier provided.        |
-|DELETE| Remove a story from the backlog.                             |
+| verb | what does it do                                                                    |
+|------|------------------------------------------------------------------------------------|
+| GET  | Get a story with the unique identifier provided.                                   |
+| PUT  | Update the story with the unique identifier provided. Use Story JSON format below. |
+|DELETE| Remove a story from the backlog.                                                   |
 
 
 
