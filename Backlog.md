@@ -17,7 +17,6 @@ You are part of the backend web service team, and are responsible for implementi
   Update the story with the unique identifier provided. Use Story JSON format below. Returns 200 if the story is updated. Otherwise standard HTTP error code is returned.
 * ``` DELETE /backlog/story/:id ```
   Remove a story from the backlog using the identifier provided. Returns 200 if the story is removed. Otherwise standard HTTP error code is returned.
-
 * What a Story looks like:
    ```javascript
    {
