@@ -4,56 +4,19 @@ Your team has been asked to create an Agile/Scrum task tracking system. This web
 
 You are part of the backend web service team, and are responsible for implementing a RESTful micro-service that represents the backlog. The REST service will have the following APIs:
 
-```http
-GET  /backlog
-```
-List the stories in the backlog.
+## /backlog
+|------|--------------------------------------------------------------|
+| GET  | List the stories in the backlog.                             |
+| POST | Add a new story to the backlog. Use Story JSON format below. |
 
-```http
-POST /backlog
-````
-Add a new story to the backlog.
+## /backlog/story/:id
+|------|--------------------------------------------------------------|
+| GET  | Get a story with the unique identifier provided.             |
+| PUT  | Update the story with the unique identifier provided.        |
+|DELETE| Remove a story from the backlog.                             |
 
-```http
-GET /backlog/story/:id
-```
-Get a story with the unique identifier provided.
 
-```http
-PUT /backlog/story/:id
-```
-Update any or all the details of the story that has the unique identifier provided.
 
-```http
-DELETE /backlog/story/:id
-```
-Remove a story from the backlog.
-
-public void Add(Story s);
-   public Story Remove(String id);   // On success, the removed Story is returned.
-   public List<Story> getSprint(int totalPointsAchievable);
-}
-```
-
-```javascript
-ffunction addStory(
-   
-   
-}
-```
-
-where Story is defined as:
-
-```java
-public class Story {
-   public String Id;
-   public int Points;
-   public int Priority;
-   ... // The actual content of the Story is omitted here
-}
-```
-
-- __You do not need to implement the entire system. Your solution should only implement the 3 key functions in the `IBacklog` interface above.__
 - Each Story class has 
   - `Id` which is a __unique__ identifier for each story,
   - `Points` which represents an estimate of development effort required to complete the story,
