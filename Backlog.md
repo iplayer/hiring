@@ -2,13 +2,43 @@
 
 Your team has been asked to create an Agile/Scrum task tracking system. This web system will allow the entire BBC to use this tool to manage their team’s backlog, and every employee will have access to it. 
 
-You are part of the backend web service team, and are responsible for implementing a Backlog object that implements the following interface:
+You are part of the backend web service team, and are responsible for implementing a RESTful micro-service that represents the backlog. The REST service will have the following APIs:
 
-```java
-public interface IBacklog {
-   public void Add(Story s);
+```http
+GET  /backlog
+```
+List the stories in the backlog.
+
+```http
+POST /backlog
+````
+Add a new story to the backlog.
+
+```http
+GET /backlog/story/:id
+```
+Get a story with the unique identifier provided.
+
+```http
+PUT /backlog/story/:id
+```
+Update any or all the details of the story that has the unique identifier provided.
+
+```http
+DELETE /backlog/story/:id
+```
+Remove a story from the backlog.
+
+public void Add(Story s);
    public Story Remove(String id);   // On success, the removed Story is returned.
    public List<Story> getSprint(int totalPointsAchievable);
+}
+```
+
+```javascript
+ffunction addStory(
+   
+   
 }
 ```
 
