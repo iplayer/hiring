@@ -8,16 +8,17 @@ Each of the listing pages should include:
 3. navigation to other letters
 
 ## API
-The API end point can be found at:
+The API end point follows the following format:
+
 ```
-http://data.bbc.co.uk/ibl/v1/atoz/{letter}/programmes?rights=web&page={page}&per_page=20&initial_child_count=0&sort=title&sort_direction=asc&availability=available&api_key={api_key}
+{base_uri}/ibl/v1/atoz/{letter}/programmes?page={page}
 ```
 
 | Parameter     | Value                              |
 | ------------- | ---------------------------------- |
+| `{base_uri}`  | The base server URI, which will be provided        |
 | `{page}`      | page number to retrieve, from 1    |
 | `{letter}`    | can be any single letter or `0-9`  |
-| `{api_key}`   | should be the key provided to you. |
 
 
 ## Notes
